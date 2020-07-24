@@ -1,0 +1,13 @@
+{% extends 'style.html' %}
+{% block content %}
+<h1>you are almost there</h1>
+
+confirm your details:
+<form action="password" method='post'>
+    {% csrf_token %}
+    First name : <input type="text" name="firstname"><br>
+    Last name : <input type="text" name="lastname"><br>
+    Email address : <input type="text" name="email"><hr>
+    Location :  <input type="text" name="location"><br>
+    <input type="submit">
+{% endblock %}
